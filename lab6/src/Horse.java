@@ -19,4 +19,8 @@ class Horse {
     public String Name() {
         return (this.name);
     }
+
+    public String HorseName() {
+        return (this.name);
+    }
 }
