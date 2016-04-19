@@ -17,7 +17,7 @@ public class Test2 {
         String s, s1, name_cat, name_dog;
 
         try {
-            System.out.print("Введите имя кота: ");
+            System.out.print("Введите кличку кота: ");
             Scanner sc_namec = new Scanner(System.in);
             name_cat = sc_namec.next();
             for (int i = 0; i < 10; i++) {
@@ -53,7 +53,7 @@ public class Test2 {
                 }
             }
 
-            System.out.print("Введите имя собаки: ");
+            System.out.print("Введите кличку собаки: ");
             Scanner sc_named = new Scanner(System.in);
             name_dog = sc_named.next();
             for (int i = 0; i < 10; i++) {

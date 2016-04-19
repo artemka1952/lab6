@@ -16,9 +16,9 @@ public class Dog extends Pet {
 
     public void showInfo() {
         System.out.println("\nХарактеристика собаки:");
-        System.out.println("Имя:" + nameDog);
-        System.out.println("Вес:" + getWeight());
-        System.out.println("Возраст:" + getAge());
+        System.out.println("Кличка: " + nameDog);
+        System.out.println("Вес: " + getWeight());
+        System.out.println("Возраст: " + getAge());
         System.out.println("Пол:" + getSex());
     }
 }

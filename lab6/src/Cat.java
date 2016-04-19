@@ -16,14 +16,14 @@ public class Cat extends Pet {
     public void setNameCat(String newNameCat) {
         this.nameCat = newNameCat;
     }
-// Вывод полной информации о животном 
 
+// Вывод полной информации о животном 
     @Override
     public void showInfo() {
-        System.out.println("\n Характеристика кота:");
-        System.out.println("Имя:" + getNameCat());
-        System.out.println("Вес:" + getWeight());
-        System.out.println("Возраст:" + getAge());
-        System.out.println("Пол:" + getSex());
+        System.out.println("\n Характеристика кота: ");
+        System.out.println("Кличка: " + getNameCat());
+        System.out.println("Вес: " + getWeight());
+        System.out.println("Возраст: " + getAge());
+        System.out.println("Пол: " + getSex());
     }
 }
