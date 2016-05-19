@@ -15,6 +15,6 @@ class Pegas extends Horse {
     }
 
     void fly() {
-        System.out.print("Летит лошадь с именем: " + this.HorseName());
+        System.out.print("Летит лошадь с именем: " + this.Name());
     }
 }
