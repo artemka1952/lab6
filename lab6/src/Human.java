@@ -10,17 +10,15 @@
  */
 class Human extends Ape {
 
-    void showInfoMan() {
-        System.out.println("\nХарактеристики человека:");
-        System.out.println("Вес составляет:" + getWeight());
-        System.out.println("IQ мозга равен:" + getSize() + "\n");
+    public Human() {
     }
 
-    void HumanCauchesApe() {
-        System.out.println("Человек поймал обезьяну и посадил в клетку");
-    }
+    public void hunting(Animals animal) {
+        if (this.getPower() > animal.getPower()) {
+            System.out.println("Человечек принес домой дичь. Бедная обезьянка +_+\n");
+        } else {
+            System.out.println("Человечка выгнали из дома(он не принес добычу)\n");
+        }
 
-    void HumanCauchesFish() {
-        System.out.println("Наш дрищ поймал рыбеху. Кто-то сварит нам уху");
     }
 }

@@ -1,3 +1,7 @@
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,25 +12,25 @@
  *
  * @author var1541b
  */
-class Animals {
+public class Animals {
+    private int power;
 
-    private int weight;
-    private int Size;
-
-    public void setWeight(int newWeight) {
-        weight = newWeight;
+    public int getPower() {
+        return power;
     }
 
-    public void setSize(int newSize) {
-        Size = newSize;
-    }
+    public Animals() {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-    public int getWeight() {
-        return weight;
+        while (true) {
+            try {
+                System.out.println("Введите силу");
+                power = Integer.parseInt(in.readLine());
+                System.out.println();
+                break;
+            } catch (Exception error) {
+                System.out.println("Некорректный ввод\n");
+            }
+        }
     }
-
-    public int getSize() {
-        return Size;
-    }
-
 }
