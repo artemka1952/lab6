@@ -13,8 +13,8 @@ class Human extends Ape {
     public Human() {
     }
 
-    public void hunting(Animals animal) {
-        if (this.getPower() > animal.getPower()) {
+    public void hunting(Ape ape) {
+        if (this.getPower() > ape.getPower()) {
             System.out.println("Человечек принес домой дичь. Бедная обезьянка +_+\n");
         } else {
             System.out.println("Человечка выгнали из дома(он не принес добычу)\n");
